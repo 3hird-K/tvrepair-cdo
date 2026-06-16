@@ -43,7 +43,9 @@ export function Logo({
         <span
           className={cn(
             "mt-0.5 text-[10px] font-bold uppercase tracking-[0.2em]",
-            variant === "light" ? "text-primary-foreground/70" : "text-primary/90",
+            variant === "light"
+              ? "text-primary-foreground/70"
+              : "text-primary/90",
           )}
         >
           TV Repair
