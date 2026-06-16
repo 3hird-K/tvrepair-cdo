@@ -78,7 +78,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={smsLink("Hi PixelFix, I'd like to book a TV repair.")}
+                  href={smsLink("Hi LimFix, I'd like to book a TV repair.")}
                   className="group flex items-center gap-2.5 text-muted-foreground transition-colors hover:text-primary"
                 >
                   <MessageSquare className="h-4 w-4 text-primary transition-transform group-hover:scale-110" />

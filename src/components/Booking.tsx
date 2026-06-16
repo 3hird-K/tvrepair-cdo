@@ -71,7 +71,7 @@ export function Booking() {
 
   const smsBody = useMemo(() => {
     const lines = [
-      "New TV Repair Booking — PixelFix",
+      "New TV Repair Booking — LimFix",
       `Name: ${data.name || "—"}`,
       `Mobile: ${data.mobile || "—"}`,
       `City: ${data.city || "—"}`,
@@ -159,7 +159,7 @@ export function Booking() {
                     </div>
                   </a>
                   <a
-                    href={smsLink("Hi PixelFix, I'd like to book a TV repair.")}
+                    href={smsLink("Hi LimFix, I'd like to book a TV repair.")}
                     className="flex items-center gap-3 rounded-2xl bg-primary-foreground/10 p-4 transition-all hover:bg-primary-foreground/15 hover:translate-x-0.5"
                   >
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-foreground/15 text-primary-foreground">
