@@ -16,13 +16,23 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <TrustStrip />
+        <div className="hidden md:block">
+          <TrustStrip />
+        </div>
         <Problems />
-        <Process />
-        <WhyUs />
-        <Coverage />
+        <div className="hidden md:block">
+          <Process />
+        </div>
+        <div className="hidden md:block">
+          <WhyUs />
+        </div>
+        <div className="hidden md:block">
+          <Coverage />
+        </div>
         <Booking />
-        <Faq />
+        <div className="hidden md:block">
+          <Faq />
+        </div>
       </main>
       <Footer />
       <FloatingCall />

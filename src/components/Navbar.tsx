@@ -7,9 +7,9 @@ import { buttonVariants } from "./ui/Button";
 
 const LINKS = [
   { href: "#problems", label: "Problems We Fix" },
-  { href: "#process", label: "How It Works" },
-  { href: "#coverage", label: "Service Areas" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#process", label: "How It Works", mobileHidden: true },
+  { href: "#coverage", label: "Service Areas", mobileHidden: true },
+  { href: "#faq", label: "FAQ", mobileHidden: true },
 ];
 
 export function Navbar() {
@@ -35,7 +35,7 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-border bg-background shadow-sm"
+          ? "border-b border-border bg-background/80 backdrop-blur-md shadow-sm"
           : "bg-transparent",
       )}
     >
@@ -89,7 +89,10 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              className={cn(
+                "rounded-xl px-4 py-3 text-base font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground",
+                link.mobileHidden && "hidden md:flex"
+              )}
             >
               {link.label}
             </a>

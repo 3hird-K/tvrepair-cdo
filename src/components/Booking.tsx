@@ -123,7 +123,7 @@ export function Booking() {
     <section id="book" className="relative bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-stretch gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <Reveal>
+          <Reveal className="hidden lg:block">
             <Card className="relative p-8 sm:p-10 h-full bg-primary border-0 shadow-xl">
               <div className="relative flex h-full flex-col">
                 <Badge
@@ -190,8 +190,16 @@ export function Booking() {
             </Card>
           </Reveal>
 
-          <Reveal delay={100}>
+          <Reveal delay={100} className="lg:col-span-1">
             <Card className="h-full p-6 shadow-lg sm:p-8">
+              <div className="mb-8 lg:hidden">
+                <h2 className="text-2xl font-bold text-foreground">
+                  Book a Repair
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Fill in your details and we'll arrange a home visit.
+                </p>
+              </div>
               {submitted ? (
                 <SuccessState data={data} smsBody={smsBody} onReset={reset} />
               ) : (

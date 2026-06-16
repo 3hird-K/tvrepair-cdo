@@ -112,7 +112,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <h3 className="text-sm font-bold uppercase tracking-wider text-foreground">
               Quick links
             </h3>

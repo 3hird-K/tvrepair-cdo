@@ -68,7 +68,7 @@ export function Hero() {
                 src={indexImg}
                 alt="Modern flat-screen TV in a bright living room"
                 loading="eager"
-                className="h-[28rem] w-full object-cover sm:h-[32rem] transition-transform duration-700 hover:scale-[1.02]"
+                className="h-64 w-full object-cover sm:h-[32rem] transition-transform duration-700 hover:scale-[1.02]"
               />
             </div>
 
